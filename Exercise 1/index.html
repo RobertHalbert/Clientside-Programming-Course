@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-blue">
+    <h1>Choose Your Magical Creature!</h1>
+    <select id="creatureSelector">
+        <option value="Wizard">I am a wizard!</option>
+        <option value="Dragon">I am a dragon!</option>
+        <option value="Fairy">I am a fairy!</option>
+        <option value="Unicorn">I am a Unicorn!</option>
+    </select>
 
+    <button class="w3-button w3-round w3-border" onclick="selectCreature()">Get Costume</button>
+    <br/>
+    <p id="costumeInfo"></p>
+    <script src="script.js"></script>
+</body>
+</html>
