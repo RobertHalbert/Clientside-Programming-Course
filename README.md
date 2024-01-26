@@ -1,4 +1,4 @@
-# Clienside-Programming-Course
+# Clientside-Programming-Course
 
 LABS:
 
