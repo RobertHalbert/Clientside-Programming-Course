@@ -1,0 +1,89 @@
+body,h1 {font-family: "Raleway", sans-serif}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:white;
+    text-align: center;
+}
+
+body {
+  background-image: url('images/1142.jpg');
+
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  width:100%;
+  background-attachment: fixed;
+}
+
+@media (max-width: 499px) {
+    #ticket-container{
+        display: block;
+		
+    }
+	body{
+		background-size: cover;
+	}
+}
+
+#ticket-container {
+    gap: 10px;
+}
+
+.ticket {
+    border-right: 15px solid orange;
+    border-left: 15px solid orange;
+    padding: 20px 40px;
+    cursor: pointer;
+	background:yellow;
+	font-weight:bold;
+	text-decoration: red underline overline wavy; 
+	min-width: fit-content;
+    max-width: fit-content;
+}
+
+#cart-container {
+    margin-top: 30px;
+}
+
+#cart {
+    width: 350px;
+    height: 350px;
+    border: 2px dashed #333;
+	background: #ff33cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.droppable {
+    background-color: #f0f0f0;
+}
+#dialog {
+ 	background: purple;
+	width:550px;
+	height:350px;
+	padding:20px 30px;
+	border:1px solid purple;
+	color:white;
+	font-weight:bold;
+}
+#dialog-message {
+    text-align: center;
+}
+
+
+
+/* Keyframe Animation */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FairStyles.css">
+    <title>Fairground Academy Ticket System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+<h1>Ticket Sales</h1>
+<div>
+    <div id="ticket-container" class="d-flex flex-row justify-content-center flex-wrap">
+        <div class="ticket" data-price="10" data-ticket="fun-pass">
+            Fun Pass - $10
+        </div>
+        <div class="ticket" data-price="5" data-ticket="carousel-pass">
+            Carousel Pass - $5
+        </div>
+        <div class="ticket" data-price="8" data-ticket="rollercoaster-pass">
+            Rollercoaster Pass - $8
+        </div>
+    </div>
+    
+</div>
+
+    <div id="cart-container" class="d-flex flex-row justify-content-center">
+        <div id="cart" class="droppable">
+            <p>Cart</p>
+        </div>
+    </div>
+
+    <div id="dialog">
+        <p id="dialog-message">Drag tickets to the cart!</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="FairScripts.js"></script>
+</body>
+</html>
