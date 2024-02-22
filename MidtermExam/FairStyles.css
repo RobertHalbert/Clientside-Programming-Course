@@ -17,15 +17,7 @@ body {
   background-attachment: fixed;
 }
 
-@media (max-width: 499px) {
-    #ticket-container{
-        display: block;
-		
-    }
-	body{
-		background-size: cover;
-	}
-}
+
 
 #ticket-container {
     gap: 10px;
@@ -42,11 +34,20 @@ body {
 	min-width: fit-content;
     max-width: fit-content;
 }
+#ticket-container .ticket:hover {
+    animation: wiggle 0.6s ease-in infinite;
+}
 
 #cart-container {
     margin-top: 30px;
 }
-
+#totalPrice {
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 25%;
+}
 #cart {
     width: 350px;
     height: 350px;
@@ -55,6 +56,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .droppable {
@@ -86,4 +89,26 @@ body {
     50% {
         transform: translateX(10px);
     }
+}
+
+@keyframes wiggle {
+    0%,100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+@media (max-width: 499px) {
+    #ticket-container{
+        display: block;
+		
+    }
+	body{
+		background-size: cover;
+        font-size: 50px;
+	}
 }

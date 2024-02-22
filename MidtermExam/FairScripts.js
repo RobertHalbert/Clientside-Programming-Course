@@ -1,3 +1,5 @@
+let ticket_count = 0;
+let total_price = 0;
 $(document).ready(function() {
 	
 	$('#dialog').hide();
@@ -20,7 +22,8 @@ $(document).ready(function() {
     // Show jQuery UI Dialog
     function showDialog(ticket, price) {
         $('#dialog-message').html(`Added ${ticket} to the cart! Cost: $${price}`);
-		
+		ticket_count++;
+        total_price += price;
         $('#dialog').dialog({
             show: {
                 effect: 'shake',
@@ -31,5 +34,6 @@ $(document).ready(function() {
                 duration: 500
             }
         });
+        $('#totalPrice').text('You have '+ticket_count+' tickets. Totaling $'+total_price+'.');
     }
 });
